@@ -17,7 +17,6 @@ root.render(
       <Route path="/tabs" element={<Tabs />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Register />} />
-
     </Routes>
   </MemoryRouter>,
 );
