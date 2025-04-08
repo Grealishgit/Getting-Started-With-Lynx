@@ -2,8 +2,8 @@ import { useCallback, useEffect, useState } from '@lynx-js/react'
 
 import './App.css'
 import arrow from './assets/arrow.png'
-import lynxLogo from './assets/lynx-logo.png'
-import reactLynxLogo from './assets/react-logo.png'
+import { useNavigate } from 'react-router'
+
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false)
@@ -12,6 +12,8 @@ export function App() {
     console.info('Hello, ReactLynx')
   }, [])
 
+  const nav = useNavigate();
+
   const onTap = useCallback(() => {
     'background only'
     setAlterLogo(!alterLogo)
@@ -19,17 +21,27 @@ export function App() {
 
   return (
     <view>
+      <scroll-view scroll-orientation="vertical" style="padding:5px;width:100%; height:100%;">
       <view className='Background' />
       <view className='App'>
         <view className='Banner'>
-          <view className='Logo' bindtap={onTap}>
-            {alterLogo
-              ? <image src={reactLynxLogo} className='Logo--react' />
-              : <image src={lynxLogo} className='Logo--lynx' />}
+
+            <text className='Title'>Welcome</text>
+            <text className='Subtitle'>To Neuro Share</text>
+
+            <view className='button' style={{}} >
+              <text
+                bindtap={() => nav('/home')}
+                style={{
+                  color: 'white',
+                  fontSize: '20px',
+                  textAlign: 'center'
+
+                }} >
+                Get Started</text>
+            </view>
           </view>
-          <text className='Title'>React</text>
-          <text className='Subtitle'>on Lynx</text>
-        </view>
+
         <view className='Content'>
           <image src={arrow} className='Arrow' />
           <text className='Description'>Hunter😉!</text>
@@ -37,9 +49,12 @@ export function App() {
             Glad to <text></text>
             see you Here!
           </text>
+          </view>
+
+
+
         </view>
-        <view style={{ flex: 1 }}></view>
-      </view>
+      </scroll-view>
     </view>
   )
 }

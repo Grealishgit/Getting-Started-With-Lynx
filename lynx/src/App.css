@@ -1,24 +1,17 @@
 :root {
-  background-color: #000;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   --color-text: #fff;
 }
 
-.Background {
+/* .Background {
   position: fixed;
-  background: radial-gradient(
-    71.43% 62.3% at 46.43% 36.43%,
-    rgba(18, 229, 229, 0) 15%,
-    rgba(239, 155, 255, 0.3) 56.35%,
-    #ff6448 100%
-  );
-  box-shadow: 0px 12.93px 28.74px 0px #ffd28db2 inset;
-  border-radius: 50%;
+  background: linear-gradient(to left, #0f0c29, #302b63, #24243e);
   width: 200vw;
-  height: 200vw;
+  height: 180vw;
   top: -60vw;
   left: -14.27vw;
   transform: rotate(15.25deg);
-}
+} */
 
 .App {
   position: relative;
@@ -65,6 +58,7 @@ text {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -74,9 +68,11 @@ text {
   0% {
     transform: scale(1);
   }
+
   50% {
     transform: scale(0.9);
   }
+
   100% {
     transform: scale(1);
   }
@@ -116,4 +112,20 @@ text {
   font-size: 12px;
   margin: 5px;
   color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 30px;
+}
+
+.button {
+  color: green;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  padding: 20px;
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  border-radius: 8px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
 }
