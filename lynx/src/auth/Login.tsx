@@ -32,8 +32,7 @@ export default function Login() {
 
                 <view className='footer'>
                     <text className='footerText'>Don't have an Account?→
-                        <text bindtap={() => navigate('/signup')} className='footerRef'> Register</text></text>
-                    <text bindtap={() => navigate('/home')} className='footerRef'> Register</text>
+                        <text bindtap={() => navigate('/signup')} className='footerRef'> Register Here</text></text>
                 </view>
 
             </view>

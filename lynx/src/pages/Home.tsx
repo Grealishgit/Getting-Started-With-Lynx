@@ -2,6 +2,7 @@ import React from 'react';
 import '../pages/Home.css';
 import { useNavigate } from 'react-router';
 
+
 const Home = () => {
 
     const navigate = useNavigate();
@@ -17,9 +18,7 @@ const Home = () => {
                         Home Page
                     </text>
 
-                    <text className='subTitle' > <text bindtap={() => navigate('/')} className='subTitle-link'> Home→</text> dashboard</text>
-                        
-                    
+                    <text className='subTitle' > <text bindtap={() => navigate('/')} className='subTitle-link' style={{textDecoration:"underline"}} > Home→</text> dashboard</text>                
                 </view>
 
                 {/* Cards Section */}
@@ -35,7 +34,7 @@ const Home = () => {
                         </text>
 
                         <view className='viewMore'>
-                    <text className='viewText'>View More</text>
+                    <text bindtap={()=>navigate('/login')} className='viewText'>View More</text>
                 </view>
 
                     </view>
