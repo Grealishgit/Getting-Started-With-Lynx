@@ -27,10 +27,10 @@ export function App() {
       <view className='Background' />
       <view className='App'>
           <view className='Banner'>
-            
-
-            <text className='Title' style={{ fontFamily: 'CustomFont' }}>Neuro
-              <text className='Title' style={{ color: 'orange', textDecoration: 'underline' }}>Share</text></text>
+          
+            <text className='Title' style={{ fontFamily: 'CustomFont',textDecoration: 'underline'  }}>Safari
+              <text className='Title' style={{ color: 'orange',textDecoration:'none' }}>Luxury</text>
+            </text>
             
             {/* <image src={preview} style={{width:"300px",height:"50px" }}/> */}
             <view className='button' style={{}} >

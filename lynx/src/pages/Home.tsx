@@ -1,7 +1,7 @@
 import React from 'react';
 import '../pages/Home.css';
 import { useNavigate } from 'react-router';
-
+import Tabs from './Tabs.jsx'; 
 
 const Home = () => {
 
@@ -72,6 +72,7 @@ const Home = () => {
 
                 </view>
             </scroll-view>
+            <Tabs/>
         </view>
     );
 };
