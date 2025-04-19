@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import Tabs from './pages/Tabs.jsx';
 import Login from './auth/Login.jsx';
 import Register from './auth/Register.jsx';
+import Listings from './pages/Listings.jsx';
 
 
 
@@ -14,6 +15,7 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/listings" element={<Listings />} />
       <Route path="/tabs" element={<Tabs />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Register />} />

@@ -3,7 +3,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 70px;
+    height: 65px;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     display: flex;
     flex-direction: row;
@@ -33,3 +33,12 @@
     font-size: 12px;
     font-weight: 600;
 }
+
+.tab-item.active .tab-label {
+    color: #00bfff;
+}
+
+/* .tab-item.active .tab-icon {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+} */
