@@ -9,7 +9,6 @@ export default function componentName() {
 
     const navigate = useNavigate();
     const [showPassword, setShowPassword] = useState(false);
-    const [password, setPassword] = useState('');
 
     return (
         <page>
