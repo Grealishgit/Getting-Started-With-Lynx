@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../auth/Login.css'
 import { useNavigate } from 'react-router'
+import visibility from '../assets/images/visibility.png'
+import eye from '../assets/images/eye.png'
 
 export default function Login() {
 
     const navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
+    const [password, setPassword] = useState('');
 
     return (
         <page>
@@ -19,7 +23,8 @@ export default function Login() {
 
                 <text className='inputText'>Password</text>
                 <view className='inputPassword'>
-                    <input className='inputBox' type="text" placeholder='Password' />
+                    <input className='inputBox' type={showPassword ? 'text' : 'password'} placeholder='Password' />
+                    <image bindtap={() => setShowPassword(!showPassword)} className='showPassword' src={showPassword ? visibility : eye} />
                 </view>
 
                 <view className='passwordForgot'>

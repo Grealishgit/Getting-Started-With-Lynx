@@ -13,6 +13,12 @@
   transform: rotate(15.25deg);
 } */
 
+.buttonTap{
+  color: white;
+  font-size: 20px;
+  font-family: CustomFont;
+}
+
 .App {
   position: relative;
   min-height: 100vh;

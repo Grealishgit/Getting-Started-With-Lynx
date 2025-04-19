@@ -41,7 +41,7 @@
 
 
 .bannerCard {
-    margin-top: 25px;
+    margin-top: 10px;
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
@@ -51,7 +51,6 @@
  .bannerImage {
     width: 100%;
     height: 200px;
-
 } 
 
 .bannerText {
@@ -68,11 +67,28 @@
     margin-top: 10px;
     margin-left: 5px;
 }
+.categoriesContainer1{
+    margin-top: 15px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .categoriesText{
     font-weight: bold;
+    margin-top: 20px;
     font-size: 15px;
+    text-decoration: underline;
+    color: #00bfff;
 }
-
+.categoriesText1{
+    margin-top: 10px;
+    margin-left: 5px;
+   font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #00bfff;
+}
 .servicesRow {
     display: flex;
     justify-content: space-between;
@@ -113,63 +129,157 @@
     color: white;
 }
 
-.allCards {
+.estateTypes{
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+   
+}
+.estateCard{
+    width: 250px;
+    height: 150px;
+    justify-items: center;
+    align-items: center;
     background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+.estateImage{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.estateTextContainer{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 10px;
+    background-color: #00bfff;
+    width: 120px;
+    bottom: 40px;
+    height: 30px;
+    border-radius: 7px;
+}
+.estateText{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    font-weight: bold;
+    
+}
+.allCards {
+    background-color: #00bfff;
     width: 100%;
     margin-top: 25px;
-    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
 }
 
-.allCards-text {
-    font-size: 15px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    color: #333;
-    text-align: center;
+.imageContainer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .propertyImage {
     width: 100%;
-    height: 180px;
-    border-radius: 10px;
-    margin: 0 10px 10px 0;
+    height: 100%;
+    display: block;
 }
 .propertyImage1{
-    width: 100%;
+   width: 100%;
     height: 150px;
     border-radius: 10px 10px 0 0;
-    margin: 0 10px 10px 0;
+    margin: 0 10px 10px 0; 
+}
+
+.allCards-text {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .allCards-p {
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+    color: #eaeff1;
+    font-weight: bold;
     font-size: 14px;
-    color: #666;
-    text-align: center;
-    margin-bottom: 5px;
-
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
 }
 
 .viewMore {
+    padding: 10px 15px;
+    position: relative;
+    left: 15px;
+    bottom: 50px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #00bfff;
+    border-radius: 5px;
+    width: 109px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.viewBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 70px;
+    height: 30px;
+    gap: 5px;
+    border-radius: 5px;
     margin-top: 10px;
+    top: 5px;
+    right: 10px;
+    position: absolute;
+}
+.viewTextBox{
+    color: #00bfff;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .viewText {
     font-size: 14px;
-    color: #0077cc;
-    cursor: pointer;
-    text-decoration: underline;
-    text-align: center;
+    color: white;
+    text-align: left;
+    font-weight: bold;
 }
 
+.view-icon{
+    width: 25px;
+    height: 25px;
+    top: 10px;
+    right: 15px;
+   position: absolute;
+}
+.view-icons{
+    width: 15px;
+    height: 15px;
+}
 .sideCards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin-top: 25px;
+    margin-top: 10px;
 }
-
 
 
 .allCards-side {
@@ -183,10 +293,22 @@
     background-color: white;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 100px; /* Changed from 700px */
-    padding: 10px;
+    margin-bottom: 100px; 
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+.allCards-p1{
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+.allCards-p2{
+    font-size: 14px;
+    font-weight: bold;
+    color: #00bfff;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px
 }
 
 .locationList {
@@ -216,4 +338,7 @@
   background-color: #00bfff;
   color: white; 
 }
+
+
+
 
